@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tip.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Tip Calculator</h2>
+
+        <h5>Enter your bill amount</h5>
+        
+        <p><b>Rs. </b><input type="tel" id="bill" placeholder="amount"> </p> </br>
+
+        
+        <label for="service"><h5>How was the service</h5></label> </br>
+
+            <select name="service" id="service">
+                <option value="exc">Excellent - 20% </option>
+                <option value="med">Medium - 10% </option>
+                <option value="not">Not so good - 5% </option>
+            </select> </br></br></br>
+
+        <h5>How many people Sharing the Bill?</h5>
+        <label for="num"></label>
+        <input type="tel" id="num" name="num" > </br> </br>
+
+        <button onclick="cal()" value="Submit"><b> Calculate </b></button>  </br> </br>
+    
+        <input type="text" name="show" id="show">
+
+        <p>Each</p>
+
+        <button onclick="reset()" name="reset">Reset</button>
+        
+    </div>
+    
+    <script src="calc.js"></script>
+</body>
+</html>
